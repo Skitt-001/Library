@@ -3,8 +3,9 @@ const modal = document.getElementById("myModal");
 const modalOpenBtn = document.getElementById("modal");
 const modalClose = document.getElementById("close");
 const addBookBtn = document.getElementById("btnaddBook");
+const clearBooks = document.getElementById("modalClear");
 
-const myLibrary = [];
+let myLibrary = [];
 
 function Book(titleInput, authorInput, pagesInput){
     this.titleInput = titleInput,
@@ -59,6 +60,15 @@ function displayLibrary(){
 
 }
 
+function clearInput(){
+  const titleInput = document.getElementById("textInput");
+  const authorInput = document.getElementById("authorInput");
+  const pagesInput = document.getElementById("pagesInput");
+  titleInput.value = "";
+  authorInput.value = "";
+  pagesInput.value = "";
+}
+
 modalOpenBtn.onclick = function(){
     modal.style.display = "flex";
 }
@@ -81,4 +91,10 @@ modalClose.onclick = function() {
     addBooktoLibrary(book);
     displayLibrary();
     console.log(myLibrary);
+    clearInput();
+  }
+
+  clearBooks.onclick = function(){
+    myLibrary = [];
+    Library.textContent = "";
   }
