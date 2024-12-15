@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(11, 30, 47);
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    color: rgba(255, 255, 255, 0.558);
+}
+#header button{
+    width: 10%;
+    height: fit-content;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(132, 27, 132);
+    color: rgba(255, 255, 255, 0.558);
+}
+#header button:hover{
+    background-color: rgba(151, 32, 151, 0.894);
+}
+#header button:active{
+    background-color: rgb(132, 27, 132);
+}
+.modal{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000;
+}
+.modal-content{
+    display: flex;
+    position: relative;
+    background-color: rgb(60, 61, 78);
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-radius: 15px;
+    z-index: 1001;
+
+    button {
+        width: 50%;
+        margin: 10px;
+        height: 40%;
+        padding: 5px;
+        font-size: 1.1em;
+        border:none;
+        border-radius: 15px;
+        background-color: rgb(132, 27, 132);
+        color: rgba(255, 255, 255, 0.558);
+    }
+
+    button:hover {
+        background-color: rgba(151, 31, 151, 0.894);
+    }
+
+    button:active {
+        background-color: rgb(132, 27, 132);
+    }
+}
+
+.modal-content .heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.758);
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+.modal-content .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.758);
+    font-size: 1.1em;
+}
+.modal-content .input > div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;  /* Width of each input group */
+    margin: 0 auto;  /* Center the input groups */
+}
+
+.modal-content .input input {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;  /* Take full width of parent */
+    background-color: black;
+    color: white;
+}
+
+.modal-content .input p {
+    padding: 2px;
+    margin: 2px;
+    /* Remove any text-align if you want labels aligned with inputs */
+}
+#Library {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#Library .book {
+    background-color: beige;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+#Library .title, #Library .author, #Library .pages { 
+    display: flex; 
+    flex: 1 1 auto;
+}
+
+#Library label { margin-right: 8px; /* Space between label and text */ } 
+
+#Library p { margin: 0;}

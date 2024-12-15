@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Library app</h1>
+        <button id="modal"><label>+</label> Add Book
+        </button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="heading">
+                <span class="addBook">Add New Book</span>
+                <span id="close">&times;</span>
+            </div>
+            <div class="input">
+                <div class="titleinput">
+                    <p>Title</p>
+                    <input id="textInput" type="text">
+                </div>
+                <div class="authorinput">
+                    <p>Author</p>
+                    <input id="authorInput" type="text">
+                </div>
+                <div class="pagesinput">
+                    <p>Pages</p>
+                    <input id="pagesInput" type="number">
+                </div>
+            </div>
+            <button id="btnaddBook">Add Book</button>
+          </div>
+    </div>
+    <div id="Library">
+        <div class="book">
+            <div class="title">
+                <label>Title:</label>
+                <p id="bookTitle">Lingling</p>
+            </div>
+            <div class="author">
+                <label>Author:</label>
+                <p id="bookAuthor">Obama</p>
+            </div>
+            <div class="pages">
+                <label>Pages:</label>
+                <p id="bookPages">55</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
