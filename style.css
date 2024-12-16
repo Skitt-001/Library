@@ -59,8 +59,7 @@ body{
     border-radius: 15px;
     z-index: 1001;
 
-    button {
-        width: 50%;
+    #btnaddBook {
         margin: 10px;
         height: 40%;
         padding: 5px;
@@ -69,15 +68,32 @@ body{
         border-radius: 15px;
         background-color: rgb(132, 27, 132);
         color: rgba(255, 255, 255, 0.558);
+        flex: 1 1 auto;
     }
 
-    button:hover {
+    #btnaddBook:hover {
         background-color: rgba(151, 31, 151, 0.894);
     }
 
-    button:active {
+    #btnaddBook:active {
         background-color: rgb(132, 27, 132);
     }
+
+}
+.modalbuttons {
+    display: flex;
+    flex-direction: column;
+}
+#btnIsRead1, #btnIsRead2 {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.1em;
+    border:none;
+    border-radius: 15px;
+    background-color: rgb(14, 90, 10);
+    color: rgba(255, 255, 255, 0.558);
+    flex: 1 1 auto;
+    min-width: 83px;
 }
 
 .modal-content .heading{
@@ -136,6 +152,13 @@ body{
     display: flex;
     flex-direction: column;
     padding: 1%;
+    min-width: 150px;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    height: 200px;
+    flex: 0 0 auto;
+
+    
 }
 #Library .title, #Library .author, #Library .pages { 
     display: flex; 
@@ -145,3 +168,19 @@ body{
 #Library label { margin-right: 8px; /* Space between label and text */ } 
 
 #Library p { margin: 0;}
+
+#Library .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#deleteButton {
+    background-color: rgb(123, 19, 19);
+    color: rgba(255, 255, 255, 0.558);
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.1em;
+    border:none;
+    border-radius: 15px;
+    flex: 1 1 auto;
+}
